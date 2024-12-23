@@ -44,20 +44,10 @@ body {
     color: #0ef3ff; /* Cor ao passar o mouse */
   }
   
-  
-h1 {
+/* Conteudos */
+
+  h1 {
     padding: 10dvh;
     text-align: center;
     font:-size 45px;
-}
-
-.umalua {
-    text-align: center;
-    rotate: 30deg;
-    margin-top: -50px;
-
-}
-
-p {
-    text-align: center;
 }
