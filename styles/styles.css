@@ -1,9 +1,18 @@
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'Minecraftia';
-    height: 100dvh;
+    height: auto;
     overflow-x: hidden;
     color: rgb(255, 255, 255);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
 }
 
 /* Estilo geral da navbar */
@@ -44,7 +53,8 @@ body {
     color: #0ef3ff; /* Cor ao passar o mouse */
   }
   
-  
+
+
 h1 {
     padding: 10dvh;
     text-align: center;
@@ -60,4 +70,100 @@ h1 {
 
 p {
     text-align: center;
+    margin: 0 auto;
+    text-align: justify;
+ }
+
+ .paragarfo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.paragrafo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragrafo {
+  text-align: center;
+  max-width: 100%;
+}
+
+
+/* Estilo do container de mídia */
+.cointainer-media {
+  text-align: center;
+  padding: 20px;
+  height: 300px; /* Altura fixa para o container */
+  overflow: hidden; /* Garante que o conteúdo extra não apareça */
+  box-sizing: border-box; /* Garante que o padding não afete a largura */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza os ícones dentro do container */
+}
+
+/* Remover margens e paddings indesejados em todos os elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Garantir que o body ocupe toda a altura da tela */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+/* Container principal do conteúdo da página */
+main {
+  flex: 1; /* Garante que o conteúdo principal ocupe o espaço restante */
+}
+
+/* Estilo do footer */
+footer {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 10;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: auto; /* Garante que o footer fique no fundo */
+}
+
+/* Estilo dos links dos ícones */
+.social-icon {
+  text-decoration: none;
+}
+
+/* Estilo dos ícones no footer */
+.social-icon img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+  margin: 0 10px;
+  filter: brightness(0) invert(1); /* Cor dos ícones para branco */
+}
+
+/* Efeito de hover nos ícones */
+.social-icon img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3) invert(1); /* Mantém a cor branca ao passar o mouse */
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 10px;
+  padding: 5px 0; 
+  line-height: 1.9; 
+  max-width: 90%;
+}
+
