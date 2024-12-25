@@ -4,6 +4,10 @@ body {
     height: auto;
     overflow-x: hidden;
     color: rgb(255, 255, 255);
+    background-image: linear-gradient(#00000080, rgba(1, 1, 1, 0.5)), url('https://cdn.discordapp.com/attachments/1318548112100298853/1321514995757875290/2024-12-25_08.50.02.png?ex=676d843f&is=676c32bf&hm=b4a056200a5971a0204ba981ef099cd90da2fa8808e459996eb32f91776c2e74&');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 html, body {
@@ -22,10 +26,11 @@ box-sizing: border-box;
     top: 0;
     height: -5;
     background-color: rgba(36, 36, 36, 0.7);
-    backdrop-filter: blur(60px);
+    backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(10px); /* safari is so good if you are in apple ecosystem!!! */
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: solid 1px rgb(61, 61, 61);
   }
   
   .navbar nav ul {
@@ -56,22 +61,21 @@ box-sizing: border-box;
 
 
 h1 {
-    padding: 10dvh;
+    padding: 15dvh;
     text-align: center;
     font:-size 45px;
-}
-
-.umalua {
-    text-align: center;
-    rotate: 30deg;
-    margin-top: -50px;
-
 }
 
 p {
     text-align: center;
     margin: 0 auto;
     text-align: justify;
+    margin: 20px;
+ }
+
+ h2 {
+  text-align: center;
+  padding-top: 80px;
  }
 
  .paragarfo {
@@ -105,7 +109,7 @@ p {
   align-items: center; /* Centraliza os ícones dentro do container */
 }
 
-/* Remover margens e paddings indesejados em todos os elementos */
+/* matar margens e paddings indesejados em todos os elementos */
 *,
 *::before,
 *::after {
@@ -118,24 +122,23 @@ p {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+  min-height: 100vh;
 }
 
 /* Container principal do conteúdo da página */
 main {
-  flex: 1; /* Garante que o conteúdo principal ocupe o espaço restante */
+  flex: 1; /
 }
 
 /* Estilo do footer */
 footer {
-  background-color: rgb(0, 0, 0);
   position: relative;
   z-index: 10;
-  padding: 20px 0;
+  padding: 110px 0;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  margin-top: auto; /* Garante que o footer fique no fundo */
+  margin-top: auto; 
 }
 
 /* Estilo dos links dos ícones */
@@ -149,21 +152,32 @@ footer {
   height: 50px;
   cursor: pointer;
   transition: transform 0.3s, filter 0.3s;
-  margin: 0 10px;
-  filter: brightness(0) invert(1); /* Cor dos ícones para branco */
+  margin: 0 13px;
+  filter: brightness(0) invert(1);
+  margin-top: 200px;
 }
 
 /* Efeito de hover nos ícones */
 .social-icon img:hover {
   transform: scale(1.2);
-  filter: brightness(1.3) invert(1); /* Mantém a cor branca ao passar o mouse */
+  filter: brightness(1.3) invert(1);
 }
 
+/* footer */
 .footer-text {
   text-align: center;
+  text-align: center;
   font-size: 10px;
-  padding: 5px 0; 
-  line-height: 1.9; 
-  max-width: 90%;
+  padding: 10px 0;
+  line-height: 1.9;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  width: 90%;
 }
 
+.footer-subtext {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgb(34, 34, 34);
+}
