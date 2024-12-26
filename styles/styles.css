@@ -24,7 +24,7 @@ box-sizing: border-box;
     position: fixed;
     width: 100%;
     top: 0;
-    height: -5;
+    height: 60px;
     background-color: rgba(36, 36, 36, 0.7);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(10px); /* safari is so good if you are in apple ecosystem!!! */
@@ -61,9 +61,9 @@ box-sizing: border-box;
 
 
 h1 {
-    padding: 15dvh;
-    text-align: center;
-    font:-size 45px;
+  padding: 77px 20px; 
+  text-align: center;
+  font-size: 40px;
 }
 
 p {
@@ -96,17 +96,16 @@ p {
   max-width: 100%;
 }
 
-
 /* Estilo do container de mídia */
 .cointainer-media {
   text-align: center;
   padding: 20px;
-  height: 300px; /* Altura fixa para o container */
-  overflow: hidden; /* Garante que o conteúdo extra não apareça */
-  box-sizing: border-box; /* Garante que o padding não afete a largura */
+  height: 300px;
+  overflow: hidden; 
+  box-sizing: border-box; 
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza os ícones dentro do container */
+  align-items: center; 
 }
 
 /* matar margens e paddings indesejados em todos os elementos */
@@ -181,3 +180,64 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgb(34, 34, 34);
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    height: 110dvh;
+  }
+
+  .navbar nav ul {
+    flex-direction: auto;
+    height: 55px;
+  }
+
+  .navbar nav ul li {
+    padding: 15px 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 87px 5px;
+  }
+
+  p {
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  .paragrafo-container {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+
+  .paragrafo {
+    margin: 7px;
+    font-size: 14px;
+  }
+
+/* .container-media {
+} */ 
+
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: inline-block; 
+    vertical-align: middle;
+    margin-top: 1rem;
+  }
+
+  footer {
+    padding: 59px 0;
+  }
+
+  .footer-text {
+    font-size: 7px;
+    padding: 5px 0;
+  }
+}
+
+
+
