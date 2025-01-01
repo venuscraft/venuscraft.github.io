@@ -5,8 +5,9 @@ import tailwind from '@astrojs/tailwind';
 
 import netlify from '@astrojs/netlify';
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  adapter: netlify()
+  adapter: netlify(),
+  site: 'https://venuscraft.netlify.app',  // URL do seu site no Netlify
+  base: '/',  // Como está na raiz, o base deve ser '/'
 });
