@@ -1,6 +1,6 @@
 [build]
-  publish = "dist"  # O diretório onde o Astro gera o build
-  command = "npm run build"  # O comando para gerar o build do seu site
+  publish = "dist"
+  command = "npm run build"  
 
 [[redirects]]
   from = "/*"

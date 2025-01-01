@@ -8,6 +8,6 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
   integrations: [tailwind()],
   adapter: netlify(),
-  site: 'https://venuscraft.netlify.app',  // URL do seu site no Netlify
-  base: '/',  // Como está na raiz, o base deve ser '/'
+  site: 'https://venuscraft.netlify.app', // URL do seu site
+  base: '/',  // Base da URL, para garantir que o caminho seja correto
 });
