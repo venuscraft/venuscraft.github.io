@@ -5,7 +5,5 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],
-  site: 'https://venuscraft.github.io',
-  base: '/venuscraft.github.io',
+  integrations: [tailwind()]
 });
